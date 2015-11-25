@@ -67,8 +67,8 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/textView5"
-        android:layout_alignLeft="@id/textView6"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/textView6"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Role"
         android:textSize="10sp" />
@@ -77,7 +77,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView6"
+        android:layout_below="@+id/textView6"
         android:text="LoginRole"
         android:layout_toLeftOf="@id/editText1"
         android:layout_marginTop="27dp" />
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="method"
-        android:layout_above="@id/textView6"
+        android:layout_above="@+id/textView6"
         android:layout_alignLeft="@id/textView5"
         android:layout_marginTop="27dp" />
 
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:text="LoginStatus"
         android:layout_alignLeft="@id/textView8"
-        android:layout_below="@id/button1"
+        android:layout_below="@+id/button1"
         android:layout_marginTop="86dp"
          />
 
@@ -135,8 +135,7 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseLine="@id/button2"
-        android:layout_alignBottom="@id/button2"
+        android:layout_alignBottom="@+id/button2"
         android:layout_alignLeft="@id/textView2"
         android:onClick="login"
         android:text="LoginGet"
