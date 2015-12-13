@@ -9,4 +9,50 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        />
+
+    //Correspond à un password EditText
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPassword">
+
+    //A priori permet de faire afficher le clavier quand on clique pour saisir du texte
+    <requestFocus android:layout_width="wrap_content"></requestFocus>
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+
 </RelativeLayout>
